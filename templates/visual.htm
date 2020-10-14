@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
+</head>
+<style>
+  body {
+    background-image: url("http://127.0.0.1:8000/data/slide_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 95vh;
+  }
+
+  h3 {
+    color: #a4c639 !important;
+  }
+
+  h5 {
+    color: black !important;
+  }
+
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .active>.nav-link,
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link.show,
+  .navbar .navbar-nav .show>.nav-link {
+    color: #a4c639 !important;
+    border-bottom: none !important;
+  }
+
+  .data-visual {
+    height: 60vh;
+  }
+
+  .caption {
+    color: black;
+    size: 17px;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark mt-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h3>Term Deposit Prediction</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:8000/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:8000/prediction">Prediction</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://localhost:8000/visual">Visualization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:8000/author">Author</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Corousel of Data -->
+  <div id="dataIndicators" class="carousel slide mt-5" data-ride="carousel">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/age.png" alt="First slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Age</h5>
+          <p class="caption">Relationship between age and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/campaign.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Campaign</h5>
+          <p class="caption">Relationship between campaign and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/default.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Default</h5>
+          <p class="caption">Relationship between default and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/deposit.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Deposit</h5>
+          <p class="caption">Information of deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/duration.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Duration</h5>
+          <p class="caption">Relationship between duration and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/education.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Education</h5>
+          <p class="caption">Relationship between education and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/housing.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Housing</h5>
+          <p class="caption">Relationship between housing and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/job.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Job</h5>
+          <p class="caption">Relationship between job and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/loan.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Loan</h5>
+          <p class="caption">Relationship between loan and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/marital.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Marital Status</h5>
+          <p class="caption">Relationship between marital status and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/poutcome.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Previous Outcome</h5>
+          <p class="caption">Relationship between previous outcome and deposit
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="data-visual" src="http://127.0.0.1:8000/data/previous.png" alt="Second slide">
+        <div class="carousel-caption d-md-block mt-5">
+          <h5>Previous Campaign</h5>
+          <p class="caption">Relationship between previous campaign and deposit
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#dataIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#dataIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
